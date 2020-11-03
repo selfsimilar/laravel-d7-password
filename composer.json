@@ -1,0 +1,51 @@
+{
+  "name": "selfsimilar/laravel-d7-password",
+  "description": "Laravel package that checks and creates Drupal 7 password hashes",
+  "version": "0.1.0",
+  "type": "laravel-package",
+  "keywords": [
+    "laravel",
+    "drupal",
+    "password",
+    "hashing"
+  ],
+  "homepage": "https://github.com/selfsimilar/laravel-d7-password",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Colin Sheaff",
+      "email": "colin-sheaff@northwestern.edu",
+      "homepage": "http://colin.sheaff.net"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/selfsimilar/laravel-d7-password/issues"
+  },
+  "require": {
+    "selfsimilar/drupal7_password_hasher": "dev-main",
+    "php": ">=5.3.0",
+    "illuminate/support": ">=4.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9",
+    "mockery/mockery": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Selfsimilar\\D7Password\\": "src/"
+    }
+  },
+  "replace": {
+    "selfsimilar/laravel-drupal7-password": "self.version"
+  },
+  "extra": {
+      "laravel": {
+          "providers": [
+            "Selfsimilar\\D7Password\\D7PasswordProvider"
+          ],
+          "aliases": {
+            "D7Password": "Selfsimilar\\D7Password\\Facades\\D7Password"
+          }
+      }
+  }
+}
