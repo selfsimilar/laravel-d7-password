@@ -3,6 +3,7 @@
 namespace Selfsimilar\D7Password;
 
 use Selfsimilar\D7Password\Contracts\D7Password as D7PasswordContract;
+use Selfsimilar\D7PasswordHasher\Hasher as Hasher;
 
 class D7Password implements D7PasswordContract
 {
