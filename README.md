@@ -1,6 +1,7 @@
 Laravel Drupal 7 Password
 ===================
 
+[![Build Status](https://travis-ci.org/selfsimilar/laravel-d7-password.svg?branch=main)](https://travis-ci.org/selfsimilar/laravel-d7-password)
 
 This Laravel 8 package provides an easy way to create and check against Drupal 7
 password hashes. Drupal is not required.
