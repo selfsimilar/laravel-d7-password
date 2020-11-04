@@ -12,7 +12,7 @@ class D7PasswordTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->password_hash_mock = Mockery::mock('Selfsimilar\D7Password\Hasher');
+        $this->password_hash_mock = Mockery::mock('Selfsimilar\D7PasswordHasher\Hasher');
         $this->D7_password = new D7Password($this->password_hash_mock);
     }
 
