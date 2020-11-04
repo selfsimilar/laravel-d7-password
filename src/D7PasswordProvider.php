@@ -1,6 +1,6 @@
 <?php namespace Selfsimilar\D7Password;
 
-use Selfsimilar\D7Password\Hasher as D7Hasher;
+use Selfsimilar\D7PasswordHasher\Hasher as Hasher;
 use Illuminate\Support\ServiceProvider;
 
 class D7PasswordProvider extends ServiceProvider {
@@ -25,7 +25,7 @@ class D7PasswordProvider extends ServiceProvider {
     public function register()
     {
         $this->app->singleton('Selfsimilar\D7Password\Contracts\D7Password', function () {
-            return new D7Password(new D7Hasher());
+            return new D7Password(new Hasher());
         });
     }
 
