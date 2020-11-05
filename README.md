@@ -17,7 +17,7 @@ Begin by installing this package through Composer. Edit your project's
 
 ```json
 "require": {
-  "selfsimilar/laravel-d7-password": "~0.1.0"
+  "selfsimilar/laravel-d7-password": "~0.1.2"
 }
 ```
 
