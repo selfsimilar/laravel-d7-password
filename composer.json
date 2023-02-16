@@ -1,7 +1,7 @@
 {
   "name": "selfsimilar/laravel-d7-password",
   "description": "Laravel package that checks and creates Drupal 7 password hashes",
-  "version": "0.1.2",
+  "version": "v1.0.0",
   "type": "laravel-package",
   "keywords": [
     "laravel",
